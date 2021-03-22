@@ -1,9 +1,20 @@
-# README
+# Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Intro: 
 
-Things you may want to cover:
+---------------------------
+
+## Focus
+
+* Back-end: Database associations, one to many, many to many.
+* Front-end: Using bootstrap to make a good looking website.
+
+## Approach
+
+* Ensuring the fundamentals are done correctly 
+* Write the program from scratch and not rely on ruby magic / generators in order to get a good understanding of how rails work. 
+
+---------------------------
 
 * Ruby version
 
@@ -17,8 +28,5 @@ Things you may want to cover:
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
 
-* ...
