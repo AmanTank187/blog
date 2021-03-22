@@ -32,6 +32,10 @@ Intro:
 
 - Can use .destroy to delete from the table. It also hits the database straight away without .save method.
 
+# Model
+
+- Adding a model to add validations so extra and uneeded information cannot be add to the database/table (Checkout active record validations, good resource)
+
 ---
 
 - Ruby version
