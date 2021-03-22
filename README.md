@@ -40,6 +40,10 @@ Intro:
 
 - Adding a model to add validations so extra and uneeded information cannot be add to the database/table (Checkout active record validations, good resource)
 
+# Form helpers
+
+-
+
 ---
 
 - Ruby version
