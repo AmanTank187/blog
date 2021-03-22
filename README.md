@@ -32,6 +32,10 @@ Intro:
 
 - Can use .destroy to delete from the table. It also hits the database straight away without .save method.
 
+- Clear way to see routes, rails routes --expanded
+
+- byebug can be used to pause the application and show what part of the code it is at, use 'continue' to carry on.
+
 # Model
 
 - Adding a model to add validations so extra and uneeded information cannot be add to the database/table (Checkout active record validations, good resource)
