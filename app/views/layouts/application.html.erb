@@ -11,7 +11,8 @@
   </head>
 
   <body>
-  #Flash notice is a hash so you need to iterate over it do display the message
+  
+<!-- Flash notice is a hash so iterating over it to display message on layout form -->
   <% flash.each do |name, msg| %>
     <%= msg %> 
   <% end %>

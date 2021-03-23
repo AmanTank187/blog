@@ -28,5 +28,24 @@ class ArticlesController < ApplicationController
             render 'new'
         end 
     end 
+
+    def edit 
+        @article = Article.find(params[:id])
+    end 
+
+    def update
+        @article = Article.find(params[:id])
+        
+        if @article.update(params.require(:article).permit(:title, :description))
+            #If the article is saved then it will show the message and redirect user
+            #Want the flash notice to appear on the layout page
+            flash[:notice] = "Article was updated sccessfully."
+            redirect_to @article
+        else 
+            #If the article is not saved then it will render the form page again which is
+            #Article/edit.html.erb
+            render 'edit'
+        end 
+    end 
 end 
 
