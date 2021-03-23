@@ -46,7 +46,13 @@ Intro:
 
 - An index method is used to get all data from table, example: `Article.all`
 
-- Creat method can be used to make a new article on a website. This can be done with `Article.new`. Usually you have to provide params but rails allows an article key to be used which is from the params hash and since we have an article model, rails can save them in the correct places within the table.\ As a secruity feature you have to use strong params like this `@article = Article.new(params.require(:article).permit(:title, :description))` This line is saying to allow an article key and permit a title and description from there to be used to create the object.\ When you have created the object, you will need to save the object. In this case you will need to do `@article.save` and then redirect it the show path by doing `redirect_to @article`
+- The new method has nothing in there as it doesn't need to perform a action, just a get request to get the form on the screen and intialise the article with nothing in there. Once the form is filled it out in then follows a post request and peforms the creatr action.
+
+- Create method can be used to make a new article on a website. This can be done with `Article.new`. Usually you have to provide params but rails allows an article key to be used which is from the params hash and since we have an article model, rails can save them in the correct places within the table. As a secruity feature you have to use strong params like this `@article = Article.new(params.require(:article).permit(:title, :description))` This line is saying to allow an article key and permit a title and description from there to be used to create the object.When you have created the object, you will need to save the object. In this case you will need to do `@article.save` and then redirect it the show path by doing `redirect_to @article`
+
+# Flash Messages
+
+- Creating a flash message in order to show user if they have ran into errors whilst creating an article and creating a flash message to show they have created a article successfully.
 
 # Extra learnings
 

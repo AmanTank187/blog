@@ -11,6 +11,10 @@
   </head>
 
   <body>
+  #Flash notice is a hash so you need to iterate over it do display the message
+  <% flash.each do |name, msg| %>
+    <%= msg %> 
+  <% end %>
     <%= yield %>
   </body>
 </html>
